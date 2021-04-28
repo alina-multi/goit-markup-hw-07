@@ -1,0 +1,19 @@
+.address-list {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--logo-footer-and-active-link-button);
+}
+
+.address-list--color-white {
+  margin-bottom: 9px;
+  color: var(--logo-footer-and-active-link-button);
+}
+
+.address-list__item {
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list__link {
+  transition: color var(--time-drn) var(--time-trans-fcn);
+}

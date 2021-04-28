@@ -1,0 +1,35 @@
+.features {
+  &__item {
+    flex-basis: calc((100% - var(--grid-mrgn-left) * 3) / 4);
+    margin-right: 30px;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &__icon-block {
+    @extend %flex;
+    height: 120px;
+    background-color: var(--section-bg-color);
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    width: 65.32px;
+    height: 70px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &-text {
+    display: block;
+    line-height: 1.71;
+  }
+}

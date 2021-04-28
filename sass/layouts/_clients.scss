@@ -1,0 +1,30 @@
+.clients-list {
+  &__item {
+    flex-basis: calc(100% - 150px) / 6;
+  }
+
+  &__link {
+    @extend %flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    transition: border var(--time-drn) var(--time-trans-fcn);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+
+    &:hover .clients-list__icon,
+    &:focus .clients-list__icon {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-color);
+    transition: fill var(--time-drn) var(--time-trans-fcn);
+  }
+}
